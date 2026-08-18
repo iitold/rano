@@ -25,6 +25,38 @@ Open `rano.exe`. The interface has these tabs:
 
 Compressed inputs `.gz`, `.zip` are supported (decompressed automatically). Typical ENM data files are named `enm*`; Huawei MML files are `.xml`/`.txt`.
 
+## Command line (CLI)
+
+`rano.exe` can also run without the GUI - useful for scripts and batch jobs. Run it with any option or file argument to enter CLI mode:
+
+```
+rano [options] <input files or folders...>
+```
+
+Options:
+
+| Option | Description |
+| ------ | ----------- |
+| `--out <dir>` | Export directory (default: first input file's folder) |
+| `--format <fmt>` | Export format: `csv` \| `txt` \| `xlsx` (default: `csv`) |
+| `--parser <name>` | Force a parser (auto-detect by default) |
+| `--no-db` | Keep results in memory instead of the SQLite database |
+| `--machine-id` | Print this machine's ID (for licensing) and exit |
+| `--activate <key>` | Activate with a license key, then exit |
+| `--help`, `-h` | Show this help |
+
+Examples:
+
+```
+rano cmdata.xml
+rano logs\ --format xlsx --out out\
+rano file1.xml file2.csv.gz --parser ericsson
+rano --machine-id
+rano --activate ABCD-EFGH-XXXX-XXXX
+```
+
+In CLI mode the app still checks your license (trial or key); without a valid license it will not parse/export.
+
 ## License
 
 RANO is licensed per machine.

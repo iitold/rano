@@ -49,14 +49,10 @@ Hoặc tải tay ở [Releases](https://github.com/iitold/rano/releases).
 
 ## Lịch sử phiên bản
 
-### v0.3.0 (18/08/2026)
-- **Tự động cập nhật**: About → *Check for updates* → tải bản mới, kiểm tra mã SHA-256, tự thay thế & khởi động lại. Không cần tải tay.
-- **License an toàn hơn**: file license được mã hóa theo từng máy; khi có internet, app tự kiểm tra lại với server để chống sửa đổi.
-- **Liên kết trực tiếp** từ tab About tới website và trang releases.
+Mỗi bản release trên [Releases](https://github.com/iitold/rano/releases) đều có **Release notes** ghi rõ thay đổi (kèm file `CHANGELOG.md`). Tóm tắt các bản gần đây:
 
-### v0.2.0
-- Đổi tên cột **Operator → Company**, tách thông tin liên hệ (tên, email, quốc gia, công ty) thành các trường riêng khi đăng ký trial / yêu cầu license.
-- Cải tiến xử lý dữ liệu cũ (gộp dòng trùng, sửa dòng dữ liệu cũ) và gửi email thông báo cho người dùng.
+- **v0.3.0 (18/08/2026)** — Tự động cập nhật, license mã hóa + kiểm tra online, liên kết website/releases trong About.
+- **v0.2.0** — Đổi Operator → Company, tách thông tin liên hệ thành trường riêng.
 
 ## Dữ liệu phát sinh
 

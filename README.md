@@ -1,65 +1,65 @@
 # RANO - RAN Optimize
 
-Phần mềm desktop phân tích dữ liệu CM (Configuration Management) của mạng vô tuyến: đọc các file export từ Ericsson Network Manager (ENM), Huawei MML, CSV/TXT, Excel... rồi chuyển vào database, lọc theo loại MO và xuất ra CSV/TXT/XLSX.
+Desktop tool for analyzing radio network CM (Configuration Management) data: it reads export files from Ericsson Network Manager (ENM), Huawei MML, CSV/TXT, Excel... then stores them in a database, lets you filter by MO type and export to CSV/TXT/XLSX.
 
-**Liên kết:**
+**Links:**
 - Website: <https://ranoptimize.web.app>
 - GitHub: <https://github.com/iitold/rano>
-- Tải bản mới nhất: <https://github.com/iitold/rano/releases>
+- Latest release: <https://github.com/iitold/rano/releases>
 
-## Cài đặt
+## Install
 
-1. Tải file **`rano.exe`** ở phần [Releases](https://github.com/iitold/rano/releases) (bản mới nhất).
-2. Đặt `rano.exe` vào thư mục bạn muốn (ví dụ `C:\RANO`, Desktop...). **Không cần cài đặt**, chạy trực tiếp là được.
-3. Lưu ý: thư mục chứa app phải có quyền ghi của người dùng (không nên đặt trong `Program Files` vì sẽ không tự cập nhật được).
+1. Download **`rano.exe`** from [Releases](https://github.com/iitold/rano/releases) (latest version).
+2. Put `rano.exe` in any folder you like (e.g. `C:\RANO`, Desktop...). **No installation needed** - just run it.
+3. Note: the folder must be writable by your user account (avoid `Program Files`, otherwise the app cannot self-update).
 
-## Sử dụng
+## Usage
 
-Mở `rano.exe`, giao diện có các tab:
+Open `rano.exe`. The interface has these tabs:
 
-- **Parse**: thêm file/thư mục dữ liệu (Add Files / Add Folder), chọn parser (để mặc định *Auto-detect*), bấm **Parse**. Thanh tiến trình hiển thị khi đang chạy, có thể hủy (Cancel).
-- **Records / MO**: duyệt dữ liệu đã parse, chọn các loại MO muốn xuất.
-- **Export**: xuất ra **CSV / TXT / XLSX** vào thư mục bạn chọn.
-- **License**: xem Machine ID, kích hoạt key, hoặc dùng trial.
-- **About**: xem thông tin phiên bản, kiểm tra cập nhật.
+- **Parse**: add data files/folders (Add Files / Add Folder), choose a parser (leave default *Auto-detect*), press **Parse**. A progress bar shows while running; you can cancel.
+- **Records / MO**: browse parsed data and select the MO types you want to export.
+- **Export**: export to **CSV / TXT / XLSX** into a folder you choose.
+- **License**: view the Machine ID, activate a key, or use the trial.
+- **About**: version info, check for updates.
 
-Hỗ trợ nhập file nén `.gz`, `.zip` (tự động giải nén). File dữ liệu mẫu của ENM thường là các file dạng `enm*`, MML của Huawei là `.xml`/`.txt`.
+Compressed inputs `.gz`, `.zip` are supported (decompressed automatically). Typical ENM data files are named `enm*`; Huawei MML files are `.xml`/`.txt`.
 
 ## License
 
-RANO được cấp phép theo từng máy.
+RANO is licensed per machine.
 
-1. Vào tab **License**, bấm **Copy** để lấy **Machine ID** (mỗi máy một mã riêng).
-2. Gửi Machine ID (kèm tên/công ty nếu muốn) cho người bán qua email: **doancongthanh92@gmail.com**.
-3. Nhận key từ người bán → nhập vào ô **License key** → bấm **Activate**.
+1. Open the **License** tab and click **Copy** to get your **Machine ID** (unique per machine).
+2. Send the Machine ID (with your name/company if you like) to the vendor by email: **doancongthanh92@gmail.com**.
+3. Receive the key from the vendor, paste it into the **License key** field and click **Activate**.
 
-Hoặc dùng bản dùng thử: bấm **Start Trial** (7 ngày, mỗi máy 1 lần), hoặc **Request License** để gửi yêu cầu mua.
+Or use the trial: click **Start Trial** (7 days, once per machine), or **Request License** to ask the vendor for an official key.
 
-> Lưu ý: máy đã dùng hết trial sẽ cần key chính thức. Khi có internet, app tự kiểm tra lại license với server; nếu license bị thu hồi/hết hạn, app sẽ yêu cầu kích hoạt lại.
+> Note: a machine that used up its trial needs an official key. When online, the app re-verifies the license with the server; if the license is revoked or expired, the app asks you to activate again.
 
-## Cập nhật phiên bản
+## Updates
 
-App tự cập nhật qua GitHub. Khi có bản mới:
+The app updates itself through GitHub. When a new version is available:
 
-1. Mở tab **About** → bấm **Check for updates**.
-2. Nếu có bản mới → bấm **Download vX và khởi động lại**.
-3. App tự tải, kiểm tra mã SHA-256, thay thế và khởi động lại.
+1. Open the **About** tab -> click **Check for updates**.
+2. If a new version exists -> click **Download vX and restart**.
+3. The app downloads, verifies the SHA-256 checksum, replaces itself and restarts.
 
-Hoặc tải tay ở [Releases](https://github.com/iitold/rano/releases).
+You can also download manually from [Releases](https://github.com/iitold/rano/releases).
 
-## Lịch sử phiên bản
+## Release history
 
-Mỗi bản release trên [Releases](https://github.com/iitold/rano/releases) đều có **Release notes** ghi rõ thay đổi (kèm file `CHANGELOG.md`). Tóm tắt các bản gần đây:
+Every release on [Releases](https://github.com/iitold/rano/releases) has **Release notes** describing the changes (and includes the `CHANGELOG.md`). Recent versions:
 
-- **v0.3.0 (18/08/2026)** — Tự động cập nhật, license mã hóa + kiểm tra online, liên kết website/releases trong About.
-- **v0.2.0** — Đổi Operator → Company, tách thông tin liên hệ thành trường riêng.
+- **v0.3.0 (18/08/2026)** — Auto-update, encrypted license with online check, website/releases links in About.
+- **v0.2.0** — Renamed Operator -> Company, split contact info into separate fields.
 
-## Dữ liệu phát sinh
+## Generated files
 
-- File license: `rano_license.json` (đặt cạnh `rano.exe`, được mã hóa theo máy).
-- Database tạm khi parse: nằm trong thư mục temp của hệ điều hành (tự xóa).
-- Log: thư mục `logs\` cạnh `rano.exe`.
+- License file: `rano_license.json` (next to `rano.exe`, encrypted per machine).
+- Temporary parse database: stored in the OS temp folder (cleaned up automatically).
+- Logs: `logs\` folder next to `rano.exe`.
 
-## Hỗ trợ
+## Support
 
-Mọi thắc mắc về cài đặt, license hay lỗi phần mềm, liên hệ qua email: **doancongthanh92@gmail.com**.
+For any question about installation, licensing or bugs, contact: **doancongthanh92@gmail.com**.

@@ -2,6 +2,11 @@
 
 Phần mềm desktop phân tích dữ liệu CM (Configuration Management) của mạng vô tuyến: đọc các file export từ Ericsson Network Manager (ENM), Huawei MML, CSV/TXT, Excel... rồi chuyển vào database, lọc theo loại MO và xuất ra CSV/TXT/XLSX.
 
+**Liên kết:**
+- Website: <https://ranoptimize.web.app>
+- GitHub: <https://github.com/iitold/rano>
+- Tải bản mới nhất: <https://github.com/iitold/rano/releases>
+
 ## Cài đặt
 
 1. Tải file **`rano.exe`** ở phần [Releases](https://github.com/iitold/rano/releases) (bản mới nhất).
@@ -41,6 +46,17 @@ App tự cập nhật qua GitHub. Khi có bản mới:
 3. App tự tải, kiểm tra mã SHA-256, thay thế và khởi động lại.
 
 Hoặc tải tay ở [Releases](https://github.com/iitold/rano/releases).
+
+## Lịch sử phiên bản
+
+### v0.3.0 (18/08/2026)
+- **Tự động cập nhật**: About → *Check for updates* → tải bản mới, kiểm tra mã SHA-256, tự thay thế & khởi động lại. Không cần tải tay.
+- **License an toàn hơn**: file license được mã hóa theo từng máy; khi có internet, app tự kiểm tra lại với server để chống sửa đổi.
+- **Liên kết trực tiếp** từ tab About tới website và trang releases.
+
+### v0.2.0
+- Đổi tên cột **Operator → Company**, tách thông tin liên hệ (tên, email, quốc gia, công ty) thành các trường riêng khi đăng ký trial / yêu cầu license.
+- Cải tiến xử lý dữ liệu cũ (gộp dòng trùng, sửa dòng dữ liệu cũ) và gửi email thông báo cho người dùng.
 
 ## Dữ liệu phát sinh
 

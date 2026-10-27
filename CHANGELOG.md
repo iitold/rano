@@ -1,4 +1,7 @@
 # RANO Changelog
+## v1.2.5 (27/10/2026)
+- tool optimize size with library window defaul
+
 ## v1.2.4 (24/10/2026)
 - General update.
 

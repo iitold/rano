@@ -1,4 +1,7 @@
 # RANO Changelog
+## v1.2.9 (29/10/2026)
+- General update.
+
 ## v1.2.8 (28/10/2026)
 - update trace
 

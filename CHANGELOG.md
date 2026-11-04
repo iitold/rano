@@ -1,4 +1,13 @@
 # RANO Changelog
+## v1.3.4 (04/11/2026)
+- General update.
+
+## v1.3.3 (04/11/2026)
+- General update.
+
+## v1.3.2 (04/11/2026)
+- General update.
+
 ## v1.3.1 (02/11/2026)
 - General update.
 

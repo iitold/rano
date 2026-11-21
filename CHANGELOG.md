@@ -1,4 +1,7 @@
 # RANO Changelog
+## v1.3.6 (21/11/2026)
+- add pakh & a1 module
+
 ## v1.3.5 (06/11/2026)
 - General update.
 
